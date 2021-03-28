@@ -1,11 +1,11 @@
-<?php require_once('config.php') ?>
+<?php  include('../config.php'); ?>
 
-<?php require_once( ROOT_PATH . '/includes/_head.php') ?>
-	<title> Home Page | <?= $namasitus ?> </title>
+<?php require_once( ROOT_PATH . '/admin/includes/_head.php') ?>
+	<title> Admin Page | <?= $namasitus ?> </title>
 </head>
 <body>
     
-<?php require_once( ROOT_PATH . '/includes/_nav.php') ?>
+<?php require_once( ROOT_PATH . '/admin/includes/_nav.php') ?>
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">Selamat Datang...</h1>
   <p class="lead">Ini adalah website paket wisata daerah, kami menyajikan paket wisata harga bersaing dengan kualitas pelayanan paling yahuudd dijamin puas dan bergaransi.</p>
@@ -16,7 +16,7 @@
     </p>
 </div>
 
-<?php require_once( ROOT_PATH . '/includes/_foot.php') ?>
+<?php require_once( ROOT_PATH . '/admin/includes/_foot.php') ?>
     
   </body>
 </html>

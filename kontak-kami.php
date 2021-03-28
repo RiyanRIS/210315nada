@@ -1,8 +1,7 @@
-<!-- The first include should be config.php -->
 <?php require_once('config.php') ?>
 
 <?php require_once( ROOT_PATH . '/includes/_head.php') ?>
-	<title> Kontak Kami | WISATAKU.COM </title>
+	<title> Kontak Kami |  <?= $namasitus ?> </title>
 </head>
 <body>
     

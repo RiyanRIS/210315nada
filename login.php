@@ -1,10 +1,10 @@
-<!-- The first include should be config.php -->
 <?php require_once('config.php') ?>
+<?php require_once('includes/register.php') ?>
 
 <?php require_once( ROOT_PATH . '/includes/_head.php') ?>
 <link rel="stylesheet" href="assets/signin.css">
 
-	<title> Login Akun | WISATAKU.COM </title>
+	<title> Login Akun |  <?= $namasitus ?> </title>
 </head>
 <body>
     
@@ -12,14 +12,15 @@
 
 <div class="container">
 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center row">
-<form class="form-signin">
+<form class="form-signin" action="login.php" method="post">
   <img class="mb-4" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Silahkan Login</h1>
-  <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+  <?php include(ROOT_PATH . '/includes/errors.php') ?>
+  <label for="inputEmail" class="sr-only">Username/Email address</label>
+  <input type="text" name="username" value="<?= $username ?>" id="inputEmail" class="form-control" placeholder="Username / Email address" required="" autofocus="">
   <label for="inputPassword" class="sr-only">Password</label>
-  <input type="password" id="inputPassword" class="form-control last" placeholder="Password" required="">
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Masuk</button>
+  <input type="password" name="password" id="inputPassword" class="form-control last" placeholder="Password" required="">
+  <button class="btn btn-lg btn-primary btn-block" type="submit" name="login_btn">Masuk</button>
   <p class="mt-5 mb-3 text-muted">Belum punya akun? silahkan <a href="daftar.php">daftar</a>.</p>
 </form>
 </div>

@@ -1,0 +1,57 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.frameimage{
+position:relative;
+width: 100%;
+overflow: hidden!important;
+padding-top: 70%;/* untuk mengatur ukuran, kurang/lebih dari 100% = persegi panjang,100% = persegi */
+}
+.frameimage img{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+object-fit: cover;
+}
+
+.ui-draggable, .ui-droppable {
+background-position: top;
+}
+
