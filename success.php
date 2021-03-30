@@ -2,16 +2,15 @@
 <?php require_once('includes/transaksi_function.php') ?>
 <?php require_once('includes/paket_function.php') ?>
 <?php 
-$id = $_SESSION['last_id'];
-$transaksi = getTransaksiById($id);
+  $id = $_SESSION['last_id'];
+  $transaksi = getTransaksiById($id);
 
-$paket = getPaketById($transaksi['paket']);
+  $paket = getPaketById($transaksi['paket']);
 
-$bayar = $paket['harga']+$transaksi['unixpayment'];
+  $bayar = $paket['harga']+$transaksi['unixpayment'];
 
-$sebelum = strtotime("+2 days", $transaksi['create_at']);
-$sebelum = date("d F Y H:i:s", $sebelum);
-
+  $sebelum = strtotime("+2 days", $transaksi['create_at']);
+  $sebelum = date("d F Y H:i:s", $sebelum);
 ?>
 
 <?php require_once( ROOT_PATH . '/includes/_head.php') ?>
@@ -26,9 +25,9 @@ $sebelum = date("d F Y H:i:s", $sebelum);
   <hr>
   <p>Pembayaran dapat dilakukan melalui:</p>
   <ul>
-    <li>BANK BRI: NOMOR_REKENING (ATAS_NAMA) </li>
-    <li>BANK BNI: NOMOR_REKENING (ATAS_NAMA) </li>
-    <li>BANK BCA NOMOR_REKENING (ATAS_NAMA) </li>
+    <li>BANK BRI: 9998323296737 (Nada Ramadhanty) </li>
+    <li>BANK BNI: 7830023482106 (Nada Ramadhanty) </li>
+    <li>BANK BCA 1390423207107 (Nada Ramadhanty) </li>
   </ul>
   <p>Status pemesanan kamu dapat dilihat <a href="transaksi.php">disini</a>.</p>
     

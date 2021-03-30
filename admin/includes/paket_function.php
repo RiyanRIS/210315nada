@@ -41,8 +41,10 @@ function getPaketById($user_id)
 if (isset($_POST['create'])) {
 	create($_POST);
 }
-// if user clicks the Edit user button
-if (isset($_GET['edit'])) {
+
+if (isset($_POST['update'])) {
+	update($_POST);
+}elseif (isset($_GET['edit'])) {
 	$isEditing = true;
 	$id = $_GET['edit'];
 	edit($id);
@@ -187,18 +189,6 @@ function delete($id) {
 	}
 }
 
-
-/* * * * * * * * * * * * * * * * * * * * *
-* - Escapes form submitted value, hence, preventing SQL injection
-* * * * * * * * * * * * * * * * * * * * * */
-function esc($value){
-	// bring the global db connect object into function
-	global $conn;
-	// remove empty space sorrounding string
-	$val = trim($value);
-	$val = mysqli_real_escape_string($conn, $value);
-	return $val;
-}
 
 function upload_img($img){
 	global $target_dir, $errors;

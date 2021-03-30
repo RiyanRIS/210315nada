@@ -37,7 +37,7 @@
                     <?= date("d F Y H:i:s", $key['create_at']) ?>
                   </td>
                   <td>
-                    <a href="detail_paket.php?id=<?= $key['idpaket'] ?>"><?= $key['namapaket'] ?></a>
+                    <a href="<?= BASE_URL ?>detail_paket.php?id=<?= $key['idpaket'] ?>"><?= $key['namapaket'] ?></a>
                   </td>
                   <td>
                     <?= date("d F Y H:i:s", $key['tanggal_berangkat']) ?>
@@ -52,7 +52,7 @@
                     <?php endif; ?>
                   </td>
                   <td>
-                  <a href="detail_transaksi.php?id=<?= $key['id'] ?>" title="Lihat Detail" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"><i class="fa fa-eye"></i></a> 
+                  <a href="<?= BASE_URL ?>detail_transaksi.php?id=<?= $key['id'] ?>" title="Lihat Detail" class="btn btn-sm btn-info" data-toggle="tooltip" data-placement="top"><i class="fa fa-eye"></i></a> 
                   
                   <?php if($key['status_pemesanan'] == 1): ?> ||
                     <a href="transaksi.php?berhasil=<?= $key['id'] ?>" title="Pembayaran Diterima" class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" onclick="return confirm('are you sure?')"><i class="fa fa-check"></i></a>

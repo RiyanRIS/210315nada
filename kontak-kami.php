@@ -15,24 +15,24 @@
             <h3>Kontak Kami</h3>
             <table class="table table-bordered">
                 <tr>
+                    <td>NIM Kampus</td>
+                    <td>:</td>
+                    <td>185410085 STMIK AKAKOM YOGYAKARTA</td>
+                </tr>
+                <tr>
                     <td>Nama</td>
                     <td>:</td>
-                    <td>Siwa Nada</td>
+                    <td>SABDA INDAH WAHYU A.N.R</td>
                 </tr>
                 <tr>
                     <td>Alamat</td>
                     <td>:</td>
-                    <td>jl Palungung</td>
+                    <td>Ds. Karangan Kec. Mempawah hulu Kab. Landak Kalbar.</td>
                 </tr>
                 <tr>
-                    <td>NIM</td>
+                    <td>No. Telp/Email</td>
                     <td>:</td>
-                    <td>185410103</td>
-                </tr>
-                <tr>
-                    <td>No. Telp</td>
-                    <td>:</td>
-                    <td>089677223322</td>
+                    <td><a href="https://wa.me/6289650449080">0896 5044 9080</a> / <a href="mailto:nada.ramadhanty88@gmail.com">nada.ramadhanty88@gmail.com</a></td>
                 </tr>
             </table>
         </div>

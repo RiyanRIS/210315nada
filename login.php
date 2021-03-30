@@ -13,7 +13,7 @@
 <div class="container">
 <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center row">
 <form class="form-signin" action="login.php" method="post">
-  <img class="mb-4" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <img class="mb-4" src="<?= BASE_URL ?>assets/jogja.webp" alt="" width="72" height="72">
   <h1 class="h3 mb-3 font-weight-normal">Silahkan Login</h1>
   <?php include(ROOT_PATH . '/includes/errors.php') ?>
   <label for="inputEmail" class="sr-only">Username/Email address</label>

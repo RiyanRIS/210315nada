@@ -1,4 +1,9 @@
 <?php
+$nama_paket = "";
+$deskripsi = "";
+$kunjungan = "";
+$harga = "";
+
 $errors = [];
 
 function getAllPaket()

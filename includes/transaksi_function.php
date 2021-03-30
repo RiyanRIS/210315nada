@@ -1,4 +1,8 @@
 <?php
+$tbb = "";
+$jumlah_orang = "";
+$tbb = "";
+
 define(REDIRECT, "location: transaksi.php");
 
 function getTransaksiById($id)

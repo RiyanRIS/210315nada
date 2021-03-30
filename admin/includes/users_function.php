@@ -242,17 +242,5 @@ function changeUser($id) {
 	
 }
 
-/* * * * * * * * * * * * * * * * * * * * *
-* - Escapes form submitted value, hence, preventing SQL injection
-* * * * * * * * * * * * * * * * * * * * * */
-function esc($value){
-	// bring the global db connect object into function
-	global $conn;
-	// remove empty space sorrounding string
-	$val = trim($value);
-	$val = mysqli_real_escape_string($conn, $value);
-	return $val;
-}
-
 
 ?>

@@ -43,6 +43,7 @@
               <div class="card-body">
                 <h3 class="texxt"><?= $key['nama'] ?></h3>
                 <p class="card-text texxt"><?= $key['deskripsi'] ?></p>
+                <p class="card-text texxt"><strong>Kunjungan: </strong> <?= $key['kunjungan'] ?></p>
                 <div class="d-flex justify-content-between align-items-center">
                 <?php if(!isLogin()) : ?>
                   <button type="button" class="btn btn-primary" onclick="showAlert()">Pesan</button>

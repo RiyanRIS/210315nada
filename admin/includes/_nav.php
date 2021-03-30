@@ -14,8 +14,8 @@
 
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <a class="dropdown-item" href="<?= BASE_URL . "admin/dashboard.php"  ?>">Dashboard</a>
-        <a class="dropdown-item" href="#">Profil</a>
-        <a class="dropdown-item" href="#">Ubah Password</a>
+        <a class="dropdown-item" href="<?= BASE_URL . "profil.php"  ?>">Profil</a>
+        <a class="dropdown-item" href="<?= BASE_URL . "password.php"  ?>">Ubah Password</a>
         <hr>
         <a class="dropdown-item" href="<?= BASE_URL . "logout.php" ?>">Log out</a>
       </div>
