@@ -15,7 +15,7 @@
 
     // define global constants
 	define ('ROOT_PATH', realpath(dirname(__FILE__)));
-	define('BASE_URL', 'http://localhost/nada/');
+	define('BASE_URL', 'https://nada029.herokuapp.com/');
 	$namasitus = $information[0]['namasitus'];
 
 	// PUBLIC FUNCTON
