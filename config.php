@@ -1,8 +1,8 @@
 <?php 
 	session_start();
 	// connect to database
-
-	$conn = mysqli_connect("localhost", "riyanris", "1234", "nada");
+	// mysql://b6b2e6d5c07934:2b7ebf2e@us-cdbr-east-03.cleardb.com/heroku_392495a3c1606ed?reconnect=true 
+	$conn = mysqli_connect("us-cdbr-east-03.cleardb.com", "b6b2e6d5c07934", "2b7ebf2e", "heroku_392495a3c1606ed");
 
 	if (!$conn) {
 		die("Error connecting to database: " . mysqli_connect_error());
