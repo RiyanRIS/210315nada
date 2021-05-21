@@ -1,8 +1,8 @@
 <?php 
 	session_start();
-	// connect to database
-	// mysql://b6b2e6d5c07934:2b7ebf2e@us-cdbr-east-03.cleardb.com/heroku_392495a3c1606ed?reconnect=true 
-	$conn = mysqli_connect("us-cdbr-east-03.cleardb.com", "b6b2e6d5c07934", "2b7ebf2e", "heroku_392495a3c1606ed");
+// connect to database
+// mysql://b0486600872966:54367e15@us-cdbr-east-03.cleardb.com/heroku_c9c5963cf86d4fd?reconnect=true
+	$conn = mysqli_connect("us-cdbr-east-03.cleardb.com", "b0486600872966", "54367e15", "heroku_c9c5963cf86d4fd");
 
 	if (!$conn) {
 		die("Error connecting to database: " . mysqli_connect_error());
@@ -43,4 +43,3 @@
 	function toRp($val){
 		return "Rp " . number_format($val,0,',','.');
 	}
-?>
