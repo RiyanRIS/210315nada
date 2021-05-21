@@ -33,7 +33,7 @@ CREATE TABLE `information` (
   `namasitus` varchar(32) NOT NULL,
   `deskripsi` varchar(255) NOT NULL,
   `icon` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Dumping data for table `information`
@@ -54,11 +54,11 @@ CREATE TABLE `paket` (
   `deskripsi` varchar(255) NOT NULL,
   `kunjungan` varchar(255) NOT NULL,
   `harga` int NOT NULL,
-  `gambar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `gambar` varchar(255)  DEFAULT NULL,
   `status` tinyint NOT NULL DEFAULT '1',
   `create_at` int NOT NULL,
   `delete_at` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Dumping data for table `paket`
@@ -87,7 +87,7 @@ CREATE TABLE `transaksi` (
   `create_at` int NOT NULL,
   `bayar_at` int DEFAULT NULL,
   `batal_at` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Dumping data for table `transaksi`
@@ -104,8 +104,8 @@ INSERT INTO `transaksi` (`id`, `paket`, `user`, `tanggal_berangkat`, `jumlah_ora
 
 CREATE TABLE `users` (
   `id` int NOT NULL,
-  `username` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `username` varchar(16)  NOT NULL,
+  `password` varchar(255)  NOT NULL,
   `email` varchar(64) NOT NULL,
   `nama` varchar(64) NOT NULL,
   `role` varchar(16) NOT NULL DEFAULT 'customer',
@@ -113,7 +113,7 @@ CREATE TABLE `users` (
   `last_login` int DEFAULT NULL,
   `create_at` int NOT NULL,
   `delete_at` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 ;
 
 --
 -- Dumping data for table `users`
